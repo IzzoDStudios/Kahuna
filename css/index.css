@@ -1,0 +1,376 @@
+/* Header */
+header{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logoHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoHeader img{
+    width: 40px;
+}
+
+/* End Header */
+
+/* WhatsApp Button */
+
+.whatsAppBtn{
+    z-index: 1;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+
+    margin: clamp(21px, 1vw, 55px);
+}
+
+.whatsAppBtn .btn{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+
+    border: 1px solid #eaf0d8;
+    box-shadow: none;
+}
+
+/* End WhatsApp Button */
+
+/* Banner */
+#banner{
+    background-image: 
+    linear-gradient(rgba(31, 31, 41, 0) 89%, rgba(31, 31, 41, 1) 99.9%),
+    linear-gradient(rgba(31, 31, 41, 1), rgba(31, 31, 41, 0.3)),
+    url("../images/bannerIma.webp");
+    background-size: cover;
+    background-position:  center center;
+    color: #eaf0d8;
+    height: clamp(377px, 89vh, 2584px);
+
+    margin-block: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textBanner .txtComplement{
+    color: #eaf0d8;
+}
+/* End Banner */
+
+/* About Us */
+#aboutUs{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+    min-height: 610px;
+
+    margin-top: 0;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textAboutUs{
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textAboutUs .textContainer{
+    text-align: left;
+}
+
+.textAboutUs .txtComplement{
+    color: #eaf0d8;
+}
+
+.wavesOpacityBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wavesOpacityBottom svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 35px;
+}
+
+.wavesOpacityBottom .shape-fill{
+    fill: #fbf7f2;
+}
+/* End About Us */
+
+/* Steps */
+#stepSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+}
+
+
+.titleSteps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gridSteps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 34px;
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+}
+
+.textSteps .titleStep{
+    text-align: center;
+}
+
+.imageStep svg {
+    width: 34px;
+    height: 34px;
+}
+/* End Steps */
+
+/* Plans Target */
+#planSection{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+    min-height: 987px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+}
+
+.plansText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plansText .txtComplement{
+    color: #eaf0d8;
+}
+
+.plansTargets .target{
+    max-width: 320px;
+}
+
+.planName{
+    width: 100%;
+    
+    border-bottom: 1px solid #404040;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.planPrice{
+    width: 100%;
+
+    text-align: center;
+    font-weight: bolder;
+}
+
+.planAttribute .txtDescription{
+    margin: 21px;
+
+    text-align: center;
+}
+
+.planAttribute ul{
+    list-style-type: "✓ ";
+    padding-left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.target .btn{
+    width: 100%;   
+}
+
+.waveDivisorTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waveDivisorTop svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 34px;
+}
+
+.waveDivisorTop .shape-fill{
+    fill: #fbf7f2;
+}
+
+.waveDivisorBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waveDivisorBottom svg{
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 33px;
+}
+
+.waveDivisorBottom .shape-fill{
+    fill: #fbf7f2;
+}
+/* End Plans Target */
+
+/* Contact Form */
+#contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.textForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactForm{
+    width: 50%;
+}
+
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.clientInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.clientInfo div{
+    width: 100%;
+}
+
+.projectInfo{
+    width: 100%;
+}
+
+.projectInfo textarea{
+    width: 100%;
+    height: 30vh;
+}
+/* End Contact Form */
+
+/* Footer */
+footer{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.footerBrand{
+    text-align: center;
+}
+
+.footerBrand img{
+    width: 40px;
+}
+
+.footerTerms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+.footerTerms a{
+    color: #eaf0d8;
+    text-decoration: underline;
+}
+/* End Footer */
+
+
+@media (max-width: 870px) {
+    #aboutUs {
+        padding-top: clamp(21px, 13vw,34px);
+        padding-inline: 0;
+
+        grid-template-columns: 1fr;
+    }
+
+    .imageAboutUs img {
+        max-height: 21vh;
+
+        
+        border-inline: none;
+        border-top: 1px solid #eaf0d8;
+        
+        grid-row: 1;
+    }
+
+    .gridSteps { grid-template-columns: 1fr; }
+    .contactForm { width: 100%; }
+    .clientInfo { grid-template-columns: 1fr; }
+}

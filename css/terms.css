@@ -1,0 +1,85 @@
+/* Header */
+header{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logoHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoHeader img{
+    width: 40px;
+}
+
+/* End Header */
+
+/* WhatsApp Button */
+.whatsAppBtn{
+    z-index: 1;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+
+    margin: clamp(21px, 1vw, 55px);
+}
+
+.whatsAppBtn .btn{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+
+    border: 1px solid #eaf0d8;
+    box-shadow: none;
+}
+/* End WhatsApp Button */
+
+/* General Description */
+#generalDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+#generalDesc .titleContainer{
+    text-align: center;
+}
+/* End General Description */
+
+/* Footer */
+footer{
+    background-color: #1f1f29;
+    color: #eaf0d8;
+
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.footerBrand{
+    text-align: center;
+}
+
+.footerBrand img{
+    width: 40px;
+}
+
+.footerTerms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+.footerTerms a{
+    color: #eaf0d8;
+    text-decoration: underline;
+}
+/* End Footer */
