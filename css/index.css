@@ -195,10 +195,6 @@ header {
     color: #eaf0d8;
 }
 
-.plansTargets .target{
-    max-width: 270px;
-}
-
 .planName {
     width: 100%;
     border-bottom: 1px solid #404040;
@@ -223,6 +219,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 13px;
+}
+
+.plansTargets .target{
+    min-width: 233px;
+    max-width: 265px;
 }
 
 .target .btn {

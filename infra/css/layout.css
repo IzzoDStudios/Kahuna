@@ -250,6 +250,6 @@ textarea {
 }
 
 .textContainer {
-    max-width: clamp(20ch, 70%, 65ch);
+    max-width: clamp(20ch, 100%, 65ch);
     line-height: 1.618;
 }

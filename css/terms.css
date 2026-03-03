@@ -1,46 +1,52 @@
-/* Header */
-header{
+/* =====================
+   Header
+   ===================== */
+header {
     background-color: #1f1f29;
     color: #eaf0d8;
-
     text-align: center;
-
     display: flex;
     justify-content: center;
 }
 
-.logoHeader{
+.logoHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.logoHeader img{
+.logoHeader img {
     width: 40px;
 }
 
-/* End Header */
 
-/* WhatsApp Button */
-.whatsAppBtn{
+/* =====================
+   WhatsApp Button
+   ===================== */
+.whatsAppBtn {
     z-index: 1;
-    position:fixed;
+    position: fixed;
     bottom: 0;
     right: 0;
-
     margin: clamp(21px, 1vw, 55px);
 }
 
-.whatsAppBtn .btn{
+.whatsAppBtn .btn {
     background-color: #1f1f29;
     color: #eaf0d8;
-
     border: 1px solid #eaf0d8;
     box-shadow: none;
 }
-/* End WhatsApp Button */
 
-/* General Description */
+.whatsAppBtn .btn:hover {
+    background-color: #404040;
+    color: #e7d7d8;
+}
+
+
+/* =====================
+   General Description
+   ===================== */
 #generalDesc{
     display: flex;
     flex-direction: column;
@@ -51,35 +57,48 @@ header{
 #generalDesc .titleContainer{
     text-align: center;
 }
-/* End General Description */
 
-/* Footer */
-footer{
+
+/* =====================
+   Footer
+   ===================== */
+footer {
     background-color: #1f1f29;
     color: #eaf0d8;
-
     display: flex;
     flex-direction: column;
     gap: 55px;
 }
 
-.footerBrand{
+.footerBrand {
     text-align: center;
 }
 
-.footerBrand img{
+.footerBrand img {
     width: 40px;
 }
 
-.footerTerms{
+.footerLegal {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 34px;
 }
 
-.footerTerms a{
+.footerTerms{
+    display: flex;
+    gap: 34px;
+}
+
+.footerTerms a {
     color: #eaf0d8;
     text-decoration: underline;
 }
-/* End Footer */
+
+
+/* =====================
+   Responsive
+   ===================== */
+@media (max-width: 870px) {
+    .footerLegal{flex-direction: column;}
+}
