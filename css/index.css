@@ -40,6 +40,11 @@ header{
     box-shadow: none;
 }
 
+.whatsAppBtn .btn:hover{
+    background-color: #404040;
+    color: #e7d7d8;
+}
+
 /* End WhatsApp Button */
 
 /* Banner */
