@@ -99,6 +99,8 @@ header {
 }
 
 .textAboutUs .textContainer {
+    padding: clamp(21px, 13vw, 34px);
+
     text-align: left;
 }
 
