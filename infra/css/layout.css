@@ -1,81 +1,102 @@
+/* =====================
+   Variables
+   ===================== */
 :root {
-    /* Text Sizes */
     --xxSmall: clamp(0.55rem, 0.5rem + 0.15vw, 0.65rem);
-    --xSmall: clamp(0.625rem, 0.6rem + 0.1vw, 0.75rem);   
-    --small: clamp(0.8rem, 0.75rem + 0.2vw, 0.875rem);  
-    --normal: clamp(1rem, 0.95rem + 0.4vw, 1.125rem); 
-    --large: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem); 
-    --xLarge: clamp(2.5rem, 2rem + 4vw, 3.75rem);      
+    --xSmall:  clamp(0.625rem, 0.6rem + 0.1vw, 0.75rem);
+    --small:   clamp(0.8rem, 0.75rem + 0.2vw, 0.875rem);
+    --normal:  clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+    --large:   clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+    --xLarge:  clamp(2.5rem, 2rem + 4vw, 3.75rem);
     --xxLarge: clamp(3.5rem, 2.5rem + 8vw, 6.5rem);
 }
 
-*{
+
+/* =====================
+   General
+   ===================== */
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     overflow-x: hidden;
-
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #fbf7f2;
     color: #1d1d20;
     width: 100%;
     max-width: 100vw;
     min-height: 100vh;
-
     margin: 0;
     padding: 0;
-
     font-family: "Roboto Slab";
-
     overflow-x: hidden;
 
     display: grid;
     grid-template-rows: max-content 1fr max-content;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
-/* SideBar Hidden */
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar { display: none; }
+
+a {
+    color: #243237;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    color: #e7d7d8;
+}
+
+label {
+    line-height: 2.618;
 }
 
 
-header{
+/* =====================
+   Layout
+   ===================== */
+header {
     width: 100%;
     height: 10vh;
     max-height: 60px;
     padding: clamp(13px, 3vw, 21px);
-
     grid-area: header;
 }
 
-main{
+main {
     grid-area: main;
+    overflow-x: hidden;
 }
 
-footer{
+footer {
     background-color: #014b34;
     width: 100%;
-
     margin-top: clamp(89px, 21vw, 144px);
     padding: clamp(21px, 13vw, 34px);
-
     grid-area: footer;
 }
 
-section{
+section {
     margin-block: clamp(89px, 21vw, 144px);
     padding: clamp(21px, 13vw, 34px);
 }
 
-.centerChilds{
+
+/* =====================
+   Utilidades
+   ===================== */
+.centerChilds {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,127 +104,124 @@ section{
     gap: 34px;
 }
 
-.centerText{
+.centerText {
     text-align: center;
 }
 
-a{
-    color: #243237;
-    text-decoration: none;
-}
-
-.icon{
+.icon {
     color: #1f1f29;
 }
 
-.imageSecondary{
+
+/* =====================
+   Imágenes
+   ===================== */
+.imageSecondary {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1.618/1;
-
+    aspect-ratio: 1.618 / 1;
     object-fit: cover;
     object-position: center;
-
     border-radius: 21px;
 }
 
-button, .btn{
+
+/* =====================
+   Botones
+   ===================== */
+button, .btn {
     background-color: #014b34;
     color: #eaf0d8;
-    
     margin-block: 13px;
     padding-block: 13px;
-    padding-inline: clamp(21px, 13vw,34px);
+    padding-inline: clamp(21px, 13vw, 34px);
     border: none;
     border-radius: 21px;
     box-shadow: 0px 5px #1d1d20;
-
     font-family: "Roboto Slab";
     font-weight: 400;
     letter-spacing: 0.007rem;
-
     display: inline-flex;
     justify-content: center;
-
     cursor: pointer;
 }
 
-button:hover, .btn:hover{
+button:hover, .btn:hover {
     background-color: #016f4e;
     color: #e7d7d8;
-
     box-shadow: 0px 6px #404040;
-
     transform: scale(1.03);
 }
 
-.carouselFather{
-    display: flex;
-    gap: 34px;
-    overflow-x: auto;
-    scrollbar-width: 0;
-}
 
-.carouselFather::-webkit-scrollbar{
-    display: none;
-}
-
-.carouselChild{
-    flex: 0 0 55%;
-}
-
-@media (max-width: 600px) {
-    .carouselChild {flex: 0 0 85%;}
-}
-
-input{
+/* =====================
+   Inputs
+   ===================== */
+input {
     width: 100%;
     min-height: 50px;
-
     font-family: "Roboto Slab";
-
     padding: clamp(8px, 5vw, 13px);
     border: 1px solid #e7d7d8;
     border-radius: 4px;
 }
 
-textarea{
+textarea {
     width: 100%;
     min-height: 120px;
-
     font-family: "Roboto Slab";
-
     padding: clamp(8px, 5vw, 13px);
     border: 1px solid #e7d7d8;
     border-radius: 4px;
 }
 
-.target{
+
+/* =====================
+   Componentes
+   ===================== */
+.target {
     width: 100%;
     height: 100%;
-
     padding: clamp(21px, 8vw, 34px);
     border: 1px solid #e7d7d8;
     border-radius: 4px;
 }
 
-hr{
-    color: #e7d7d8;
+.carouselFather {
+    display: flex;
+    gap: 34px;
+
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.carouselFather::-webkit-scrollbar { display: none; }
+
+.carouselChild {
+    flex: 0 0 85%;
+
+    scroll-snap-align: start;
 }
 
 
-/* Size Text Types */
-.txtXx-small { font-size: var(--xxSmall);}
-.txtX-small  { font-size: var(--xSmall);}
-.txtSmall    { font-size: var(--small);}
-.txtNormal   { font-size: var(--normal);}
-.txtLarge    { font-size: var(--large);}
-.txtX-large  { font-size: var(--xLarge);}
+/* =====================
+   Tipografía — Tamaños
+   ===================== */
+.txtXx-small { font-size: var(--xxSmall); }
+.txtX-small  { font-size: var(--xSmall); }
+.txtSmall    { font-size: var(--small); }
+.txtNormal   { font-size: var(--normal); }
+.txtLarge    { font-size: var(--large); }
+.txtX-large  { font-size: var(--xLarge); }
 .txtXx-large { font-size: var(--xxLarge); }
 
-/* Semantic Text Types */
+
+/* =====================
+   Tipografía — Semántica
+   ===================== */
 .txtComplement {
-    color:#404040;
+    color: #404040;
     font-size: var(--small);
     font-weight: 800;
     text-transform: uppercase;
@@ -220,19 +238,18 @@ hr{
     font-weight: 900;
 }
 
-label{
-    line-height: 2.618;
-}
 
-/* Text Containers */
-.titleContainer{
+/* =====================
+   Contenedores de Texto
+   ===================== */
+.titleContainer {
     width: 100%;
     max-width: 40ch;
     line-height: 1.118;
     font-weight: 900;
 }
 
-.textContainer{
-    width: clamp(20ch, 70%, 65ch);
+.textContainer {
+    max-width: clamp(20ch, 70%, 65ch);
     line-height: 1.618;
 }

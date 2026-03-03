@@ -1,117 +1,112 @@
-/* Header */
-header{
+/* =====================
+   Header
+   ===================== */
+header {
     background-color: #1f1f29;
     color: #eaf0d8;
-
     text-align: center;
-
     display: flex;
     justify-content: center;
 }
 
-.logoHeader{
+.logoHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.logoHeader img{
+.logoHeader img {
     width: 40px;
 }
 
-/* End Header */
 
-/* WhatsApp Button */
-
-.whatsAppBtn{
+/* =====================
+   WhatsApp Button
+   ===================== */
+.whatsAppBtn {
     z-index: 1;
-    position:fixed;
+    position: fixed;
     bottom: 0;
     right: 0;
-
     margin: clamp(21px, 1vw, 55px);
 }
 
-.whatsAppBtn .btn{
+.whatsAppBtn .btn {
     background-color: #1f1f29;
     color: #eaf0d8;
-
     border: 1px solid #eaf0d8;
     box-shadow: none;
 }
 
-.whatsAppBtn .btn:hover{
+.whatsAppBtn .btn:hover {
     background-color: #404040;
     color: #e7d7d8;
 }
 
-/* End WhatsApp Button */
 
-/* Banner */
-#banner{
-    background-image: 
-    linear-gradient(rgba(31, 31, 41, 0) 89%, rgba(31, 31, 41, 1) 99.9%),
-    linear-gradient(rgba(31, 31, 41, 1), rgba(31, 31, 41, 0.3)),
-    url("../images/bannerIma.webp");
+/* =====================
+   Banner
+   ===================== */
+#banner {
+    background-image:
+        linear-gradient(rgba(31, 31, 41, 0) 89%, rgba(31, 31, 41, 1) 99.9%),
+        linear-gradient(rgba(31, 31, 41, 1), rgba(31, 31, 41, 0.3)),
+        url("../images/bannerIma.webp");
     background-size: cover;
-    background-position:  center center;
+    background-position: center center;
     color: #eaf0d8;
     height: clamp(377px, 89vh, 2584px);
-
     margin-block: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.textBanner{
+.textBanner {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.textBanner .txtComplement{
+.textBanner .txtComplement {
     color: #eaf0d8;
 }
-/* End Banner */
 
-/* About Us */
-#aboutUs{
+
+/* =====================
+   About Us
+   ===================== */
+#aboutUs {
     background-color: #1f1f29;
     color: #eaf0d8;
     min-height: 610px;
-
     margin-top: 0;
-
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.textAboutUs{
+.textAboutUs {
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.textAboutUs .textContainer{
+.textAboutUs .textContainer {
     text-align: left;
 }
 
-.textAboutUs .txtComplement{
+.textAboutUs .txtComplement {
     color: #eaf0d8;
 }
 
-.wavesOpacityBottom{
+.wavesOpacityBottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -121,20 +116,22 @@ header{
     transform: rotate(180deg);
 }
 
-.wavesOpacityBottom svg{
+.wavesOpacityBottom svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 35px;
 }
 
-.wavesOpacityBottom .shape-fill{
+.wavesOpacityBottom .shape-fill {
     fill: #fbf7f2;
 }
-/* End About Us */
 
-/* Steps */
-#stepSection{
+
+/* =====================
+   Steps
+   ===================== */
+#stepSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,28 +139,27 @@ header{
     gap: 34px;
 }
 
-
-.titleSteps{
+.titleSteps {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.gridSteps{
+.gridSteps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 34px;
 }
 
-.step{
+.step {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 21px;
 }
 
-.textSteps .titleStep{
+.textSteps .titleStep {
     text-align: center;
 }
 
@@ -171,16 +167,16 @@ header{
     width: 34px;
     height: 34px;
 }
-/* End Steps */
 
-/* Plans Target */
-#planSection{
+
+/* =====================
+   Plans
+   ===================== */
+#planSection {
     background-color: #1f1f29;
     color: #eaf0d8;
     min-height: 987px;
-
     position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,57 +184,52 @@ header{
     gap: 34px;
 }
 
-.plansText{
+.plansText {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.plansText .txtComplement{
+.plansText .txtComplement {
     color: #eaf0d8;
 }
 
 .plansTargets .target{
-    max-width: 320px;
+    max-width: 270px;
 }
 
-.planName{
+.planName {
     width: 100%;
-    
     border-bottom: 1px solid #404040;
-
     font-weight: bold;
     text-align: center;
 }
 
-.planPrice{
+.planPrice {
     width: 100%;
-
     text-align: center;
     font-weight: bolder;
 }
 
-.planAttribute .txtDescription{
+.planAttribute .txtDescription {
     margin: 21px;
-
     text-align: center;
 }
 
-.planAttribute ul{
+.planAttribute ul {
     list-style-type: "✓ ";
     padding-left: 0;
-    
     display: flex;
     flex-direction: column;
     gap: 13px;
 }
 
-.target .btn{
-    width: 100%;   
+.target .btn {
+    width: 100%;
 }
 
-.waveDivisorTop{
+.waveDivisorTop {
     position: absolute;
     top: 0;
     left: 0;
@@ -247,18 +238,18 @@ header{
     line-height: 0;
 }
 
-.waveDivisorTop svg{
+.waveDivisorTop svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 34px;
 }
 
-.waveDivisorTop .shape-fill{
+.waveDivisorTop .shape-fill {
     fill: #fbf7f2;
 }
 
-.waveDivisorBottom{
+.waveDivisorBottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -268,114 +259,121 @@ header{
     transform: rotate(180deg);
 }
 
-.waveDivisorBottom svg{
+.waveDivisorBottom svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 33px;
 }
 
-.waveDivisorBottom .shape-fill{
+.waveDivisorBottom .shape-fill {
     fill: #fbf7f2;
 }
-/* End Plans Target */
 
-/* Contact Form */
-#contactUs{
+
+/* =====================
+   Contact Form
+   ===================== */
+#contactUs {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 34px;
 }
 
-.textForm{
+.textForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.contactForm{
+.contactForm {
     width: 50%;
 }
 
-.contactForm form{
+.contactForm form {
     display: flex;
     flex-direction: column;
     gap: 13px;
 }
 
-.clientInfo{
+.clientInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 13px;
 }
 
-.clientInfo div{
+.clientInfo div {
     width: 100%;
 }
 
-.projectInfo{
+.projectInfo {
     width: 100%;
 }
 
-.projectInfo textarea{
+.projectInfo textarea {
     width: 100%;
     height: 30vh;
 }
-/* End Contact Form */
 
-/* Footer */
-footer{
+
+/* =====================
+   Footer
+   ===================== */
+footer {
     background-color: #1f1f29;
     color: #eaf0d8;
-
     display: flex;
     flex-direction: column;
     gap: 55px;
 }
 
-.footerBrand{
+.footerBrand {
     text-align: center;
 }
 
-.footerBrand img{
+.footerBrand img {
     width: 40px;
 }
 
-.footerTerms{
+.footerLegal {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 34px;
 }
 
-.footerTerms a{
+.footerTerms{
+    display: flex;
+    gap: 34px;
+}
+
+.footerTerms a {
     color: #eaf0d8;
     text-decoration: underline;
 }
-/* End Footer */
 
 
+/* =====================
+   Responsive
+   ===================== */
 @media (max-width: 870px) {
     #aboutUs {
-        padding-top: clamp(21px, 13vw,34px);
+        padding-top: clamp(21px, 13vw, 34px);
         padding-inline: 0;
-
         grid-template-columns: 1fr;
     }
 
-    .imageAboutUs img {
-        max-height: 21vh;
-
-        
-        border-inline: none;
-        border-top: 1px solid #eaf0d8;
-        
-        grid-row: 1;
-    }
-
     .gridSteps { grid-template-columns: 1fr; }
+    
+    .plansTargets{
+        width: 100%;
+        margin-inline: calc(-1 * clamp(21px, 13vw, 34px));
+        padding-inline: clamp(21px, 13vw, 34px);
+    }
+    
     .contactForm { width: 100%; }
     .clientInfo { grid-template-columns: 1fr; }
+    .footerLegal{flex-direction: column;}
 }
