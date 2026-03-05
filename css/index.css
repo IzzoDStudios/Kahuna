@@ -36,6 +36,8 @@ header {
     color: var(--text-light);
     border: 1px solid var(--text-light);
     box-shadow: none;
+
+    padding-inline: 21px;
 }
 
 .whatsAppBtn .btn:hover {
@@ -183,7 +185,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 34px;
+    gap: 89px;
 }
 
 .plansText {
@@ -283,7 +285,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 34px;
+    gap: 89px;
 }
 
 .textForm {

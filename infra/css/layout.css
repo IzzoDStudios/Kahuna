@@ -111,7 +111,7 @@ footer {
 }
 
 section {
-    margin-block: clamp(89px, 21vw, 144px);
+    margin-block: clamp(89px, 34vw, 144px);
     padding: clamp(21px, 13vw, 34px);
 }
 
