@@ -36,6 +36,8 @@ header {
     color: var(--text-light);
     border: 1px solid var(--text-light);
     box-shadow: none;
+
+    padding-inline: 21px;
 }
 
 .whatsAppBtn .btn:hover {
