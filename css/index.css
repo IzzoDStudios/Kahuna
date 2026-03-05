@@ -154,6 +154,8 @@ header {
 }
 
 .step {
+    padding: 34px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,6 +226,8 @@ header {
 .plansTargets .target {
     min-width: 233px;
     max-width: 265px;
+
+    padding-inline: 34px;
 }
 
 .target .btn {
