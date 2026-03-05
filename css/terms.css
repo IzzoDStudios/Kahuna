@@ -2,8 +2,8 @@
    Header
    ===================== */
 header {
-    background-color: #1f1f29;
-    color: #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -32,29 +32,29 @@ header {
 }
 
 .whatsAppBtn .btn {
-    background-color: #1f1f29;
-    color: #eaf0d8;
-    border: 1px solid #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    border: 1px solid var(--text-light);
     box-shadow: none;
 }
 
 .whatsAppBtn .btn:hover {
-    background-color: #404040;
-    color: #e7d7d8;
+    background-color: var(--text-muted);
+    color: var(--text-light);
 }
 
 
 /* =====================
    General Description
    ===================== */
-#generalDesc{
+#generalDesc {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 34px;
 }
 
-#generalDesc .titleContainer{
+#generalDesc .titleContainer {
     text-align: center;
 }
 
@@ -63,8 +63,8 @@ header {
    Footer
    ===================== */
 footer {
-    background-color: #1f1f29;
-    color: #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     display: flex;
     flex-direction: column;
     gap: 55px;
@@ -85,13 +85,13 @@ footer {
     gap: 34px;
 }
 
-.footerTerms{
+.footerTerms {
     display: flex;
     gap: 34px;
 }
 
 .footerTerms a {
-    color: #eaf0d8;
+    color: var(--text-light);
     text-decoration: underline;
 }
 
@@ -100,5 +100,5 @@ footer {
    Responsive
    ===================== */
 @media (max-width: 870px) {
-    .footerLegal{flex-direction: column;}
+    .footerLegal { flex-direction: column; }
 }

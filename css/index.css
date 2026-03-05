@@ -2,8 +2,8 @@
    Header
    ===================== */
 header {
-    background-color: #1f1f29;
-    color: #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -15,8 +15,8 @@ header {
     justify-content: center;
 }
 
-.logoHeader img {
-    width: 40px;
+.logoHeader .txtNormal{
+    color: var(--text-light);
 }
 
 
@@ -32,15 +32,14 @@ header {
 }
 
 .whatsAppBtn .btn {
-    background-color: #1f1f29;
-    color: #eaf0d8;
-    border: 1px solid #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    border: 1px solid var(--text-light);
     box-shadow: none;
 }
 
 .whatsAppBtn .btn:hover {
-    background-color: #404040;
-    color: #e7d7d8;
+    color: var(--text-light);
 }
 
 
@@ -54,7 +53,7 @@ header {
         url("../images/bannerIma.webp");
     background-size: cover;
     background-position: center center;
-    color: #eaf0d8;
+    color: var(--text-light);
     height: clamp(377px, 89vh, 2584px);
     margin-block: 0;
     display: flex;
@@ -71,7 +70,7 @@ header {
 }
 
 .textBanner .txtComplement {
-    color: #eaf0d8;
+    color: var(--text-light-muted);
 }
 
 
@@ -79,8 +78,8 @@ header {
    About Us
    ===================== */
 #aboutUs {
-    background-color: #1f1f29;
-    color: #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     min-height: 610px;
     margin-top: 0;
     position: relative;
@@ -100,12 +99,11 @@ header {
 
 .textAboutUs .textContainer {
     padding: clamp(21px, 13vw, 34px);
-
     text-align: left;
 }
 
 .textAboutUs .txtComplement {
-    color: #eaf0d8;
+    color: var(--text-light-muted);
 }
 
 .wavesOpacityBottom {
@@ -122,12 +120,13 @@ header {
     position: relative;
     display: block;
     width: 100%;
-    height: 35px;
+    height: 55px;
 }
 
 .wavesOpacityBottom .shape-fill {
-    fill: #fbf7f2;
+    fill: var(--bg);
 }
+
 
 
 /* =====================
@@ -158,7 +157,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 21px;
+    gap: 34px;
 }
 
 .textSteps .titleStep {
@@ -170,13 +169,12 @@ header {
     height: 34px;
 }
 
-
 /* =====================
    Plans
    ===================== */
 #planSection {
-    background-color: #1f1f29;
-    color: #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     min-height: 987px;
     position: relative;
     display: flex;
@@ -194,12 +192,12 @@ header {
 }
 
 .plansText .txtComplement {
-    color: #eaf0d8;
+    color: var(--text-light-muted);
 }
 
 .planName {
     width: 100%;
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid var(--text-muted);
     font-weight: bold;
     text-align: center;
 }
@@ -223,7 +221,7 @@ header {
     gap: 13px;
 }
 
-.plansTargets .target{
+.plansTargets .target {
     min-width: 233px;
     max-width: 265px;
 }
@@ -249,7 +247,7 @@ header {
 }
 
 .waveDivisorTop .shape-fill {
-    fill: #fbf7f2;
+    fill: var(--bg);
 }
 
 .waveDivisorBottom {
@@ -270,7 +268,7 @@ header {
 }
 
 .waveDivisorBottom .shape-fill {
-    fill: #fbf7f2;
+    fill: var(--bg);
 }
 
 
@@ -325,8 +323,8 @@ header {
    Footer
    ===================== */
 footer {
-    background-color: #1f1f29;
-    color: #eaf0d8;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     display: flex;
     flex-direction: column;
     gap: 55px;
@@ -347,13 +345,13 @@ footer {
     gap: 34px;
 }
 
-.footerTerms{
+.footerTerms {
     display: flex;
     gap: 34px;
 }
 
 .footerTerms a {
-    color: #eaf0d8;
+    color: var(--text-light);
     text-decoration: underline;
 }
 
@@ -369,14 +367,14 @@ footer {
     }
 
     .gridSteps { grid-template-columns: 1fr; }
-    
-    .plansTargets{
+
+    .plansTargets {
         width: 100%;
         margin-inline: calc(-1 * clamp(21px, 13vw, 34px));
         padding-inline: clamp(21px, 13vw, 34px);
     }
-    
+
     .contactForm { width: 100%; }
     .clientInfo { grid-template-columns: 1fr; }
-    .footerLegal{flex-direction: column;}
+    .footerLegal { flex-direction: column; }
 }

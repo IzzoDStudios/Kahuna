@@ -2,6 +2,11 @@
    Variables
    ===================== */
 :root {
+    /* Tipografias */
+    --font-titles: "ClashDisplay";
+    --font-body: "Roboto Slab";
+
+    /* Tamaños de Fuentes */
     --xxSmall: clamp(0.55rem, 0.5rem + 0.15vw, 0.65rem);
     --xSmall:  clamp(0.625rem, 0.6rem + 0.1vw, 0.75rem);
     --small:   clamp(0.8rem, 0.75rem + 0.2vw, 0.875rem);
@@ -9,6 +14,24 @@
     --large:   clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
     --xLarge:  clamp(2.5rem, 2rem + 4vw, 3.75rem);
     --xxLarge: clamp(3.5rem, 2.5rem + 8vw, 6.5rem);
+
+    /* Fondos */
+    --bg:      #fbf7f2;
+    --bg-dark: #1f1f29;
+
+    /* CTA */
+    --cta:       #014b34;
+    --cta-hover: #016f4e;
+
+    /* Texto */
+    --text:       #1f1f29;
+    --text-muted: #404040;
+    --text-light: #fbf7f2;
+    --text-light-muted: #eaf0d8;
+    --text-link:  #404040;
+
+    /* Bordes */
+    --border: #e7d7d8;
 }
 
 
@@ -25,14 +48,14 @@ html {
 }
 
 body {
-    background-color: #fbf7f2;
-    color: #1d1d20;
+    background-color: var(--bg);
+    color: var(--text);
     width: 100%;
     max-width: 100vw;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: "Roboto Slab";
+    font-family: var(--font-body);
     overflow-x: hidden;
 
     display: grid;
@@ -46,7 +69,7 @@ body {
 body::-webkit-scrollbar { display: none; }
 
 a {
-    color: #243237;
+    color: var(--text-link);
     text-decoration: none;
 }
 
@@ -55,7 +78,7 @@ img {
 }
 
 hr {
-    color: #e7d7d8;
+    color: var(--border);
 }
 
 label {
@@ -80,7 +103,7 @@ main {
 }
 
 footer {
-    background-color: #014b34;
+    background-color: var(--brand);
     width: 100%;
     margin-top: clamp(89px, 21vw, 144px);
     padding: clamp(21px, 13vw, 34px);
@@ -109,7 +132,7 @@ section {
 }
 
 .icon {
-    color: #1f1f29;
+    color: var(--text);
 }
 
 
@@ -130,15 +153,15 @@ section {
    Botones
    ===================== */
 button, .btn {
-    background-color: #014b34;
-    color: #eaf0d8;
+    background-color: var(--cta);
+    color: var(--text-light);
     margin-block: 13px;
     padding-block: 13px;
     padding-inline: clamp(21px, 13vw, 34px);
     border: none;
     border-radius: 21px;
-    box-shadow: 0px 5px #1d1d20;
-    font-family: "Roboto Slab";
+    box-shadow: 0px 5px var(--text);
+    font-family: var(--font-body);
     font-weight: 400;
     letter-spacing: 0.007rem;
     display: inline-flex;
@@ -147,9 +170,9 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-    background-color: #016f4e;
-    color: #e7d7d8;
-    box-shadow: 0px 6px #404040;
+    background-color: var(--cta-hover);
+    color: var(--text-light);
+    box-shadow: 0px 6px var(--text-muted);
     transform: scale(1.03);
 }
 
@@ -160,18 +183,18 @@ button:hover, .btn:hover {
 input {
     width: 100%;
     min-height: 50px;
-    font-family: "Roboto Slab";
+    font-family: var(--font-body);
     padding: clamp(8px, 5vw, 13px);
-    border: 1px solid #e7d7d8;
+    border: 1px solid var(--border);
     border-radius: 4px;
 }
 
 textarea {
     width: 100%;
     min-height: 120px;
-    font-family: "Roboto Slab";
+    font-family: var(--font-body);
     padding: clamp(8px, 5vw, 13px);
-    border: 1px solid #e7d7d8;
+    border: 1px solid var(--border);
     border-radius: 4px;
 }
 
@@ -183,14 +206,13 @@ textarea {
     width: 100%;
     height: 100%;
     padding: clamp(21px, 8vw, 34px);
-    border: 1px solid #e7d7d8;
+    border: 1px solid var(--border);
     border-radius: 4px;
 }
 
 .carouselFather {
     display: flex;
     gap: 34px;
-
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scrollbar-width: none;
@@ -200,7 +222,6 @@ textarea {
 
 .carouselChild {
     flex: 0 0 85%;
-
     scroll-snap-align: start;
 }
 
@@ -221,7 +242,7 @@ textarea {
    Tipografía — Semántica
    ===================== */
 .txtComplement {
-    color: #404040;
+    color: var(--text-muted);
     font-size: var(--small);
     font-weight: 800;
     text-transform: uppercase;
@@ -234,8 +255,18 @@ textarea {
 }
 
 .txtPrincipal {
+    font-family: var(--font-titles);
     font-size: var(--large);
     font-weight: 900;
+}
+
+
+/* =====================
+   Texto por Tipografia
+   ===================== */
+.txtBeat{
+    font-family: var(--font-titles);
+    font-weight: bold;
 }
 
 
@@ -252,4 +283,12 @@ textarea {
 .textContainer {
     max-width: clamp(20ch, 100%, 65ch);
     line-height: 1.618;
+}
+
+
+/* =====================
+   Responsive
+   ===================== */
+@media (max-width: 600px) {
+    .carouselChild { flex: 0 0 85%; }
 }
