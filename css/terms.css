@@ -15,8 +15,8 @@ header {
     justify-content: center;
 }
 
-.logoHeader img {
-    width: 40px;
+.logoHeader .txtNormal {
+    color: var(--text-light);
 }
 
 
