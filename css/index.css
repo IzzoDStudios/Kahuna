@@ -105,7 +105,7 @@ header {
 }
 
 .textAboutUs .txtComplement {
-    color: var(--text-light-muted);
+    color: var(--text-light);
 }
 
 .wavesOpacityBottom {
@@ -181,7 +181,7 @@ header {
     color: var(--text-light);
     min-height: 987px;
 
-    padding-inline: 0;
+    padding-right: 0;
 
     position: relative;
 
@@ -198,11 +198,11 @@ header {
     align-items: center;
     text-align: center;
 
-    padding: clamp(21px, 13vw, 34px);
+    padding-right: clamp(21px, 13vw, 34px);
 }
 
 .plansText .txtComplement {
-    color: var(--text-light-muted);
+    color: var(--text-light);
 }
 
 .planName {
@@ -337,6 +337,10 @@ header {
 footer {
     background-color: var(--bg-dark);
     color: var(--text-light);
+
+    border-top-right-radius: 34px;
+    border-top-left-radius: 34px;
+
     display: flex;
     flex-direction: column;
     gap: 55px;

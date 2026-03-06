@@ -4,7 +4,7 @@
 :root {
     /* Tipografias */
     --font-titles: "ClashDisplay";
-    --font-body: "Roboto Slab";
+    --font-body: "RobotoSlab";
 
     /* Tamaños de Fuentes */
     --xxSmall: clamp(0.55rem, 0.5rem + 0.15vw, 0.65rem);
@@ -27,7 +27,6 @@
     --text:       #1f1f29;
     --text-muted: #404040;
     --text-light: #fbf7f2;
-    --text-light-muted: #eaf0d8;
     --text-link:  #404040;
 
     /* Bordes */
