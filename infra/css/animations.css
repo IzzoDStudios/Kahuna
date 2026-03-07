@@ -1,0 +1,26 @@
+/* =====================
+   IMPORTANT: TO USE THIS CSS YOU HAVE TO CONNECT "animations.js" TOO
+
+   THERES A GENERAL CLASS NAMED ".visible" AS MAKE VISIBLE THE ELEMENTS WHEN THE 
+   VIEWPORT SEE THEM.
+   ===================== */
+
+
+/* =====================
+   Fade In Animation
+   ===================== */
+/* Thats for all elements as you want to put the animation. */
+.scrollFadeIn{
+    opacity: 0;
+    transform: translateY(21px);
+    transition: all 0.3s ease;
+}
+
+
+/* =====================
+    General Class to all Scroll Animations
+   ===================== */
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}

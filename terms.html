@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="fonts/clashDisplay.css">
     <!-- CSS Styles Links -->
     <link rel="stylesheet" href="infra/css/layout.css">
+    <link rel="stylesheet" href="infra/css/animations.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/terms.css">
     <title>Kahuna</title>
@@ -32,7 +33,7 @@
         </div>
         
         <section id="generalDesc">
-            <div class="titleContainer">
+            <div class="titleContainer scrollFadeIn">
                 <p class="txtComplement">Transparencia Y Confianza</p>
                 <p class="txtPrincipal">Términos y Políticas</p>
                 <p class="txtDescription">Todo Lo Que Necesita Saber 
@@ -49,7 +50,7 @@
         </section>
 
         <section id="serviceTerms" class="centerChilds">
-            <div class="titleContainer centerText">
+            <div class="titleContainer centerText scrollFadeIn">
                 <p class="txtComplement">Nuestro Acuerdo</p>
                 <p class="txtPrincipal">Términos de Servicio</p>
                 <p class="txtDescription">Cómo Trabajamos Y Qué Puede Esperar De Nosotros.</p>
@@ -125,7 +126,7 @@
         </section>
 
         <section id="privacyTerms" class="centerChilds">
-            <div class="titleContainer centerText">
+            <div class="titleContainer centerText scrollFadeIn">
                 <p class="txtComplement">Sus Datos, Su Confianza</p>
                 <p class="txtPrincipal">Políticas de Privacidad</p>
                 <p class="txtDescription">Cómo Recopilamos, Usamos Y Protegemos Su Información.</p>
@@ -183,7 +184,7 @@
         </section>
 
         <section id="lastUpdate" class="centerChilds">
-            <div class="textContainer centerText">
+            <div class="textContainer centerText scrollFadeIn">
                 <p class="txtSmall">Última actualización: marzo 2026.</p>
                 <p class="txtSmall">Para cualquier consulta puede contactarnos directamente por WhatsApp: 
                 <a href="https://wa.me/50241362892">+502 4136-2892</a></p>
@@ -192,10 +193,11 @@
     </main>
 
     <footer>
-        <div class="footerBrand">
-            <p class="txtNormal txtBeat">Kahuna</p>
+        <div class="footerBrand scrollFadeIn">
+            <a href="index.html"><p class="txtNormal txtBeat">Kahuna</p></a>
             <p class="txtLarge txtBeat"><b>Su Presencia Digital Empieza Ahora.</b></p>
         </div>
+
         <div class="footerLegal">
             <div class="footerTerms">
                 <a href="terms.html#serviceTerms" class="txtSmall">Términos de Servicio</a>
@@ -209,6 +211,7 @@
     </footer>
 
     <!-- JS -->
-    <script src="js/index.js" type="module"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="infra/js/animations.js"></script>
 </body>
 </html>

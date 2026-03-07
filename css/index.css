@@ -350,9 +350,10 @@ footer {
     text-align: center;
 }
 
-.footerBrand img {
-    width: 40px;
+.footerBrand a{
+    color: var(--text-light);
 }
+
 
 .footerLegal {
     display: flex;

@@ -1,10 +1,15 @@
 import { sendWhatsAppMessage } from "../infra/js/sendMessageMethods.js";
 
-// Global Kahuna Variables.
+/* =====================
+   Kahuna Information
+   ===================== */
 const kahunaCountryCode = 502;
 const kahunaWhatsAppNumber = 41362892;
 
-// Preguntar por Planes.
+
+/* =====================
+   Ask for a Plan
+   ===================== */
 const firstPlan = document.querySelector("#firstPlan");
 const secondPlan = document.querySelector("#secondPlan");
 const thirdPlan = document.querySelector("#thirdPlan");
@@ -22,7 +27,10 @@ plansArray.forEach((plan) => {
     });
 });
 
-// Enviar Formulario de Contacto.
+
+/* =====================
+   Send Contact Form
+   ===================== */
 const sendFormButton = document.getElementById("submitFormBtn")
 
 sendFormButton.addEventListener("click", () => {
