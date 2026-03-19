@@ -3,7 +3,7 @@
    ===================== */
 :root {
     /* Tipografias */
-    --font-titles: "ClashDisplay";
+    --font-titles: "RobotoSlab";
     --font-body: "RobotoSlab";
 
     /* Tamaños de Fuentes */
@@ -27,7 +27,6 @@
     --text:       #1f1f29;
     --text-muted: #404040;
     --text-light: #fbf7f2;
-    --text-link:  #404040;
 
     /* Bordes */
     --border: #e7d7d8;
@@ -240,32 +239,31 @@ textarea {
 /* =====================
    Tipografía — Semántica
    ===================== */
+h1, h2, h3, h4{
+    font-family: var(--font-titles);
+    font-weight: bolder;
+}
+
 .txtComplement {
-    color: var(--text-muted);
     font-size: var(--small);
-    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
 
 .txtDescription {
     font-size: var(--small);
-    font-weight: 400;
 }
 
 .txtPrincipal {
-    font-family: var(--font-titles);
     font-size: var(--large);
-    font-weight: 900;
 }
 
 
 /* =====================
-   Texto por Tipografia
+   Texto Enfocado en Estilos
    ===================== */
-.txtBeat{
-    font-family: var(--font-titles);
-    font-weight: bold;
+.txtMark{
+    color: var(--cta);
 }
 
 

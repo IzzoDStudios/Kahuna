@@ -205,6 +205,10 @@ header {
     color: var(--text-light);
 }
 
+.plansText .txtDescription{
+    text-align: left;
+}
+
 .planName {
     width: 100%;
     border-bottom: 1px solid var(--text-muted);
