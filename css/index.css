@@ -68,10 +68,11 @@ main .marqueeContainer {
 }
 
 .decorationBehind {
-    width: 100%;
     display: inline-flex;
     margin: 0;
     padding: 0;
+
+    text-align: center;
 
     line-height: 0.89;
     letter-spacing: -0.02em;
@@ -90,8 +91,6 @@ main .marqueeContainer {
     min-width: 377px;
     max-width: 55vw;
     height: auto;
-
-    align-self: end;
 }
 
 .textProject {
@@ -236,4 +235,25 @@ footer .footerCredits span {
 
     display: flex;
     gap: var(--fib-3);
+}
+
+@media(min-width:850px) {
+    .decorationBehind {
+        width: 100%;
+    }
+
+    .imageProject {
+        align-self: center;
+    }
+}
+
+@media(min-width:1200px) {
+    .decorationBehind {
+        width: 100%;
+        padding-inline: clamp(55px, 34vw, 89px);
+    }
+
+    .imageProject {
+        align-self: end;
+    }
 }
