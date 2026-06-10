@@ -32,7 +32,7 @@ kahuna/
 ├── fonts/
 │   ├── clasDisplay.css
 │   │   
-│   └── inter.css/
+│   └── inter.css
 │ 
 └── images/
 ```
