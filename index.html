@@ -1,256 +1,156 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kahuna Agency diseña sitios web a la medida de profesionales en Guatemala. Cada proyecto refleja la identidad de quien lo encarga, sin plantillas ni atajos.">
-    <link rel="shortcut icon" href="images/kahunaLogo.svg" type="image/x-icon">
-    <!-- Font Family Links -->
-    <link rel="stylesheet" href="fonts/robotoSlab.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="fonts/clashDisplay.css">
-    <!-- CSS Styles Links -->
-    <link rel="stylesheet" href="infra/css/layout.css">
-    <link rel="stylesheet" href="infra/css/animations.css">
+    <link rel="stylesheet" href="fonts/inter.css">
+    <link rel="stylesheet" href="infra/layout.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Kahuna Agency</title>
+    <link rel="icon" href="images/logoWhiteNobg.webp">
+    <title>Kahuna Agency | Fix Yourself.</title>
 </head>
-<body>
 
-    <header>
-        <div class="logoHeader">
-            <a href="index.html"><h1 class="txtNormal">Kahuna</h1></a>
-        </div>
+<body>
+    <header class="flexCol">
+        <section class="menuHeader flexCol flexJustifyCenter">
+            <div class="logo"><img class="imageSecondary" src="images/logoWhiteNobg.webp" alt="Kahuna Brand Logo"></div>
+        </section>
+
+        <section class="bodyHeader flexCol flexAlignCenter">
+            <div class="phraseContainer centerText">
+                <p class="phraseText txtXxx-large txtHighlight">LET'S DO IT</p>
+            </div>
+        </section>
     </header>
 
     <main>
 
-        <!-- WhatsApp Button -->
-        <div class="whatsAppBtn">
-            <a href="https://wa.me/50241362892" target="_blank" class="btn txtSmall">Escríbanos.</a>
+        <div class="marqueeContainer txtNormal">
+            <div class="marqueeTrack">
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+            </div>
+
+            <div aria-hidden="true" class="marqueeTrack">
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+                <p class="marqueeText">You're your brand <span class="txtCtaHighlight">-</span> Fix
+                    Yourself.</p>
+            </div>
         </div>
 
-        <!-- Banner -->
-        <section id="banner" fetchpriority="high">
-            <div class="textBanner">
-                <div class="titleContainer">
-                    <h3 class="txtComplement">No se deje perder por el montón</h3>
-                    <h2 class="txtX-large">Es su marca. Arréglese.</h2>
-                </div>
-                <a href="#contactUs" class="btn txtSmall">Iniciemos</a>
+        <section id="manifesto" class="centerChilds">
+            <div class="textContainer">
+                <p class="txtNormal">Engineering is art. Art is utility. Most agencies force to choose between a fast,
+                    ugly site or a beautiful , slow one. What are we willing to sacrifice? <span
+                        class="txtHighlight">NOTHING</span></p>
             </div>
         </section>
 
-        <!-- About Us -->
-        <section id="aboutUs">
-            <div class="textAboutUs">
-                <div class="titleContainer scrollFadeIn">
-                    <h3 class="txtComplement">El Enfoque</h3>
-                    <h2 class="txtPrincipal">Kahuna no Hace Webs</h2>
-                </div>
-                <div class="textContainer scrollFadeIn">
-                    <p class="txtSmall">Usted atiende a sus clientes. Nosotros nos encargamos del resto. Kahuna se integra a su negocio para que su presencia digital nunca sea su problema, solo su resultado.</p>
-                </div>
+        <section id="portfolio">
+            <!-- Behind Phrase -->
+            <div class="textContainer txtHighlight centerChilds centerText">
+                <p class="decorationBehind txtXxx-large">Made to Outperform.</p>
             </div>
 
-            <div class="wavesOpacityBottom">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </section>
-
-        <!-- Steps -->
-        <section id="stepSection">
-            <div class="titleSteps">
-                <div class="titleContainer scrollFadeIn">
-                    <h3 class="txtComplement">De la Idea hasta la Realidad</h3>
-                    <h2 class="txtPrincipal">Proceso de Creación</h2>
-                </div>
-            </div>
-
-            <div class="gridSteps">
-                <div class="firstStep step">
-                    <div class="imageStep scrollFadeIn">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-
-                    <div class="textSteps textContainer scrollFadeIn">
-                        <p class="txtSmall titleStep"><b>Conocemos su Negocio</b></p>
-                        <hr>
-                        <p class="txtSmall">Un formulario clave es todo lo que necesita. Con esa base definimos objetivos, referencias y branding para trazar la ruta exacta que posiciona su nombre donde debe estar.</p>
-                    </div>
-                </div>
-
-                <div class="secondStep step">
-                    <div class="imageStep scrollFadeIn">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                    </div>
-
-                    <div class="textSteps textContainer scrollFadeIn">
-                        <p class="txtSmall titleStep"><b>Materializamos su Visión</b></p>
-                        <hr>
-                        <p class="txtSmall">Ejecutamos con precisión y le mantenemos al tanto. Dos revisiones, diseño y entrega, para asegurar que el resultado refleje exactamente la autoridad de su marca.</p>
-                    </div>
-                </div>
-
-                <div class="thirdStep step">
-                    <div class="imageStep scrollFadeIn">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-                        </svg>
-                    </div>
-
-                    <div class="textSteps textContainer scrollFadeIn">
-                        <p class="txtSmall titleStep"><b>Su Web Trabaja. También.</b></p>
-                        <hr>
-                        <p class="txtSmall">Lanzamos su sitio y nos quedamos. Tres meses de soporte incluidos para comprobar que Kahuna no desaparece después de la entrega.</p>
-                    </div>
+            <div class="projectCard centerChilds">
+                <div class="imageProject imageSecondary"><img src="images/ipadMockup.webp" alt=""></div>
+                <div class="textProject textContainer">
+                    <p class="projectTitle txtLarge txtHighlight">Educational Portal</p>
+                    <p class="projectDescription txtNormal">We centralize how institutions communicate. Powered by AI to
+                        organize content and segment audiences. This is how <span class="txtHighlight">Kahuna</span>
+                        delivers.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Plans -->
-        <section id="planSection">
-            <div class="waveDivisorTop">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
+        <section id="priceSection" class="flexCol flexAlignCenter">
+
+            <div class="cardPriceUnique flexCol textContainer">
+                <h3 class="priceTitle txtLarge">Investment:</h3>
+                <div class="priceLineContainer">
+                    <p class="txtX-large txtHighlight">$2500.00</p>
+                </div>
+
+                <p class="txtSmall">
+                    Production-ready landings. We eliminate bloated frameworks to deliver bespoke
+                    visual direction. No templates, powered by Cloudflare Pages, 14 to 21 day turnaround.
+                </p>
+
+                <a href="#" class="btn txtNormal txtHighlight">Secure Your Slot</a>
             </div>
 
-            <div class="plansText">
-                <div class="titleContainer scrollFadeIn">
-                    <h3 class="txtComplement">Planes</h3>
-                    <h2 class="txtPrincipal">Su Presencia. Su Nivel.</h2>
-                </div>
-                <div class="textContainer scrollFadeIn">
-                    <p class="txtDescription">Elija el plan que represente lo que usted es. Todos incluyen diseño responsive y dominio por un año.</p>
-                </div>
-            </div>
-
-            <div class="plansTargets carouselFather">
-                <!-- Plan Esencial -->
-                <div id="firstPlan" class="target carouselChild scrollFadeIn">
-                    <div class="planName"><h4 class="txtSmall">Esencial</h4></div>
-                    <div class="planPrice"><h4 class="txtNormal">Q1,600.00</h4></div>
-                    <div class="planAttribute">
-                        <p class="txtDescription">Su Primera Presencia Digital en Internet.</p>
-                        <ul class="txtSmall">
-                            <li>1 Página con Hasta 5 Secciones.</li>
-                            <li>Diseño Personalizado.</li>
-                            <li>Adaptado a Celulares y Computadoras.</li>
-                            <li>Formulario de Contacto.</li>
-                            <li>Su Dominio por un Año.</li>
-                        </ul>
-                    </div>
-                    <a href="#contactUs" class="btn txtSmall">Me interesa</a>
+            <div class="cardPriceMonthly textContainer flexCol flexAlignCenter">
+                <div class="monthlyLineContainer">
+                    <p class="txtLarge centerText"><span class="txtLarge txtHighlight">$60</span>/month</p>
                 </div>
 
-                <!-- Plan Profesional -->
-                <div id="secondPlan" class="target carouselChild scrollFadeIn">
-                    <div class="planName"><h4 class="txtSmall">Profesional</h4></div>
-                    <div class="planPrice"><h4 class="txtNormal">Q2,400.00</h4></div>
-                    <div class="planAttribute">
-                        <p class="txtDescription">Más Espacio para Contar Quién Es Usted.</p>
-                        <ul class="txtSmall">
-                            <li>3 Páginas con Hasta 5 Secciones Cada Una.</li>
-                            <li>Diseño Personalizado para su Marca.</li>
-                            <li>Adaptado a Celulares y Computadoras.</li>
-                            <li>Formulario de Contacto.</li>
-                            <li>Su Dominio por un Año.</li>
-                        </ul>
-                    </div>
-                    <a href="#contactUs" class="btn txtSmall">Me interesa</a>
-                </div>
-
-                <!-- Plan Completo -->
-                <div id="thirdPlan" class="target carouselChild scrollFadeIn">
-                    <div class="planName"><h4 class="txtSmall">Completo</h4></div>
-                    <div class="planPrice"><h4 class="txtNormal">Q4,000.00</h4></div>
-                    <div class="planAttribute">
-                        <p class="txtDescription">Todo lo que su Negocio Necesita para Crecer.</p>
-                        <ul class="txtSmall">
-                            <li>5 Páginas con Hasta 5 Secciones Cada Una.</li>
-                            <li>Catálogo de Productos con Pedidos por WhatsApp.</li>
-                            <li>Diseño Personalizado para su Marca.</li>
-                            <li>Adaptado a Celulares y Computadoras.</li>
-                            <li>Su Dominio por un Año.</li>
-                        </ul>
-                    </div>
-                    <a href="#contactUs" class="btn txtSmall">Me interesa</a>
-                </div>
-            </div>
-
-            <div class="waveDivisorBottom">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
+                <p class="txtSmall">
+                    We monitor your infrastructure 24/7, and keep your platform secure and online.
+                    Pure peace of mind for your startup.
+                </p>
             </div>
         </section>
-
-        <!-- Contact -->
-        <section id="contactUs">
-            <div class="textForm">
-                <div class="titleContainer scrollFadeIn">
-                    <h3 class="txtComplement">Póngase en Contacto</h3>
-                    <h2 class="txtPrincipal">Háblenos de su Visión</h2>
-                </div>
-                <div class="textContainer scrollFadeIn">
-                    <p class="txtDescription">Le responderemos en 2-3 días hábiles.</p>
-                </div>
-            </div>
-
-            <div class="contactForm">
-                <form id="speakWhitUsForm">
-                    <div class="clientInfo scrollFadeIn">
-                        <!-- Name -->
-                        <div>
-                            <label for="nameClient" class="txtSmall">Nombre</label>
-                            <input type="text" name="name" id="nameClient">
-                        </div>
-
-                        <!-- Email -->
-                        <div>
-                            <label for="emailClient" class="txtSmall">Correo Electrónico</label>
-                            <input type="email" name="email" id="emailClient">
-                        </div>
-                    </div>
-                    <div class="projectInfo scrollFadeIn">
-                        <label for="projectDesc" class="txtSmall">Descripción del Proyecto</label>
-                        <textarea name="description" id="projectDesc"></textarea>
-                    </div>
-                    <button type="button" id="submitFormBtn" class="txtSmall scrollFadeIn">Enviar</button>
-                </form>
-            </div>
-        </section>
-
     </main>
 
-    <footer>
-        <div class="footerBrand scrollFadeIn">
-            <a href="index.html"><h1 class="txtNormal">Kahuna</h1></a>
-            <h2 class="txtLarge"><b>Su Presencia Digital Empieza Ahora.</b></h2>
-        </div>
+    <footer class="flexCol flexAlignCenter">
 
-        <div class="footerLegal">
-            <div class="footerTerms">
-                <a href="terms.html#serviceTerms" class="txtSmall">Términos de Servicio</a>
-                <a href="terms.html#privacyTerms" class="txtSmall">Política de Privacidad</a>
+        <section id="ctaFooter" class="centerChilds">
+            <div class="logo">
+                <img class="imageSecondary" src="images/logoBlackNogb.webp" alt="Kahuna Brand Logo">
             </div>
 
-            <div class="footerCopy">
-                <p class="txtSmall">© 2026 Kahuna Agency</p>
-            </div>
+            <h2 class="txtX-large txtHighlight centerText">READY TO START?</h2>
+
+            <a href="#" class="btn txtNormal txtHighlight">Start Your Project</a>
+
+            <p class="txtSmall textContainer">
+                We operate 100% asynchronously. Drop your project details via email.
+                Response within 24-48h.
+            </p>
+        </section>
+
+        <div class="footerCredits textContainer flexCol">
+            <p class="txtNormal centerText">
+                <span class="txtHighlight">Kahuna Agency&copy;</span> <br>
+                <span class="txtNormal">2026</span>
+            </p>
+
+            <p class="txtNormal centerText">
+                Powered by <span class="txtHighlight">Izzo'D&copy;</span>
+            </p>
         </div>
+
+        <div class="footerTerms">
+            <a href="terms.html#serviceTerms" class="txtNormal">Términos de Servicio</a>
+            <a href="terms.html#privacyTerms" class="txtNormal">Política de Privacidad</a>
+        </div>
+
     </footer>
-
-    <script type="module" src="js/index.js"></script>
-    <script type="module" src="infra/js/animations.js"></script>
+    <script src="js/animate.js"></script>
 </body>
+
 </html>
