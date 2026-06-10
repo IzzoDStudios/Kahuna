@@ -14,15 +14,26 @@ Sitio web oficial de [Kahuna Agency](https://kahuna.li), agencia de diseño y de
 kahuna/
 ├── index.html
 ├── terms.html
+│
 ├── css/
 │   └── index.css
+│   └── terms.css
+│
 ├── infra/
-│   ├── css/
-│   │   └── layout.css      # Sistema de diseño propio — no incluido
+│   ├── layout.css      # Sistema de diseño propio — no incluido
+│   │   
 │   └── js/
 │       └── sendMessageMethods.js
+│
 ├── js/
 │   └── index.js
+│   └── animate.js
+│
+├── fonts/
+│   ├── clasDisplay.css
+│   │   
+│   └── inter.css
+│ 
 └── images/
 ```
 
