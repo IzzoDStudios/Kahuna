@@ -95,8 +95,7 @@ main .marqueeContainer {
 
 .textProject {
     width: auto;
-    height: 34vh;
-    max-height: 233px;
+    height: clamp(144px, 34vh 233px);
 
     border-bottom: 3px solid var(--text);
 }
